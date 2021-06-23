@@ -20,8 +20,6 @@ namespace WindowsFormsApp8
         public Form1()
         {
             InitializeComponent();
-            //comboBox3.Visible = false;
-            //comboBox4.Visible = false;
             comboBox1.SelectedIndex = 0;
             comboBox2.SelectedIndex = 0;
             label4.Visible = false;
@@ -306,7 +304,7 @@ namespace WindowsFormsApp8
             }
         }
 
-        private void Obnov()
+        private void Obnov() 
         {
             maskedTextBox1.Clear();
             textBox6.Clear();
@@ -461,6 +459,11 @@ namespace WindowsFormsApp8
         {
             textBox6.Clear();
             maskedTextBox1.Clear();
+        }
+
+        private void tabPage1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
