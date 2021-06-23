@@ -97,6 +97,7 @@ namespace WindowsFormsApp8
             this.maskedTextBox1.PasswordChar = '*';
             this.maskedTextBox1.Size = new System.Drawing.Size(191, 30);
             this.maskedTextBox1.TabIndex = 6;
+            this.maskedTextBox1.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.maskedTextBox1_MaskInputRejected);
             // 
             // Form2
             // 

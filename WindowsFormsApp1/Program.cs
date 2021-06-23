@@ -4,23 +4,19 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WindowsFormsApp8
+namespace WindowsFormsApp1
 {
     static class Program
     {
-        public static string login_admin = "1111";
-        public static string pass_admin = "2110";
-        public static bool f;
-        public static int login;
         /// <summary>
-        /// Главная точка входа для приложения.
+        /// The main entry point for the application.
         /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form2());
+            Application.Run(new Form1());
         }
     }
 }

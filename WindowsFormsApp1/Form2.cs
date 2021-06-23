@@ -70,5 +70,10 @@ namespace WindowsFormsApp8
                 MessageBox.Show("Используйте только арабские цифры при вводе логина", "Ошибка");
             }
         }
+
+        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
     }
 }
