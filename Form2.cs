@@ -60,14 +60,26 @@ namespace WindowsFormsApp8
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if ((e.KeyChar >= '0' && e.KeyChar <= '9')  || e.KeyChar == (char)Keys.Back)
+            
+            if ((e.KeyChar >= '0' && e.KeyChar <= '9')  || e.KeyChar == (char)Keys.Back || e.KeyChar == (char) Keys.Enter)
             {
-
+                if (e.KeyChar == (char)Keys.Enter)
+                {
+                    button1_Click(sender, e);
+                }
             }
             else
             {
                 e.Handled = true;
                 MessageBox.Show("Используйте только арабские цифры при вводе логина", "Ошибка");
+            }
+        }
+
+        private void maskedTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                button1_Click(sender, e);
             }
         }
     }

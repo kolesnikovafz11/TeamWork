@@ -97,6 +97,7 @@ namespace WindowsFormsApp8
             this.maskedTextBox1.PasswordChar = '*';
             this.maskedTextBox1.Size = new System.Drawing.Size(191, 30);
             this.maskedTextBox1.TabIndex = 6;
+            this.maskedTextBox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.maskedTextBox1_KeyPress);
             // 
             // Form2
             // 
